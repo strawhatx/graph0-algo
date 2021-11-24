@@ -57,6 +57,7 @@ const ShortestPath = () => {
 
     return result;
   };
+
   return shortestPath(edges, "w", "z");
 };
 

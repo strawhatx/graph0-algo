@@ -59,4 +59,40 @@ class BinaryTreeLevelOrderTraversal {
       arr.push(temp);
     }
   }
+
+  /*
+  public List<List<int>> LevelOrder(TreeNode root) {
+    List<List<int>> results = new List<List<int>>();
+    
+    
+    if(root == null ) return results;
+    Queue<TreeNode> queue = new Queue<TreeNode>();
+    queue.Enqueue(root);
+    
+    while(queue.Count > 0){
+        int size = queue.Count;
+        
+        var temp = new List<int>();
+        
+        for(int i = 0; i < size; i++){
+            var current = queue.Dequeue();
+            
+            temp.Add(current.val);
+            
+            if(current.left != null) {
+                queue.Enqueue(current.left);
+            }
+            
+            if(current.right != null) {
+                queue.Enqueue(current.right);
+            }
+        }
+        
+        results.Add(temp);
+    }
+    
+    return results;
+    
+}
+*/
 }
